@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1st Exercise
+        // var sayHi = function(name){
+        //     console.log(name);
+        //     debugger
+        //     alert('Hello ' + name);
+        // };
+        // alert(sayHi('Yash'));
+
+        // 2nd Exercise
+        // var user = {
+        //     name: 'Yash',
+        //     Age: 22,
+        //     phoneNumber: 9872342626,
+        //     Address: 'address',
+        //     isAdmin: true
+        // };
+        // for (let key in user){
+        //     console.log(user[key]);
+        // }
+
+        let count =0, timerId;
+        timerId = setInterval(function(){
+            count++;
+            alert('tick');
+            if(count===5){
+                clearTimeout(timerId);
+            }
+        },3000)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

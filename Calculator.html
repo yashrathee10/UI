@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputs{
+            position: absolute;
+            left: 100px;
+        }
+        .button{
+            position: relative;
+            top:10px;
+        }
+    </style>
+    <script>
+        function multiply(){
+            var x = document.getElementById('first').value;
+            var y = document.getElementById('second').value;
+            var ans = x*y;
+            return alert(ans);
+        }
+        function divide(){
+            var x = document.getElementById('first').value;
+            var y = document.getElementById('second').value;
+            var ans = x/y;
+            return alert(ans);
+        }
+        function add(){
+            var x = Number(document.getElementById('first').value);
+            var y = Number(document.getElementById('second').value);
+            var ans = x+y;
+            return alert(ans);
+        }
+        function sub(){
+            var x = document.getElementById('first').value;
+            var y = document.getElementById('second').value;
+            var ans = x-y;
+            return alert(ans);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        1st Number: <input class= "inputs" id = "first" type="number"><br>
+        2nd Number: <input class= "inputs" id = "second" type="number"><br>
+    </form>
+    <button class="button" onclick="multiply()">Multiply</button>
+    <button class="button" onclick="divide()">Divide 1st/2nd</button>
+    <button class="button" onclick="add()">Addition</button>
+    <button class="button" onclick="sub()">Subtract 1st-2nd</button>
+</body>
+</html>
